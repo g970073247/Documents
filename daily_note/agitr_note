@@ -1,0 +1,6 @@
+chapter 2 
+2.1  Installing   ROS
+Adding the ROS  repository '''
+As root, create a file called    /etc/apt/sources.list.d/ros-latest.list 
+containing a single line: deb http://packages.ros.org/ros/ubuntu trusty main
+Installing the package authentication key

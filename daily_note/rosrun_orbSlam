@@ -1,0 +1,5 @@
+rosrun ORB_SLAM2 RGBD camera/depth_registered/image_raw:=camera/depth/image_raw Vocabulary/ORBvoc.txt Examples/RGB-D/TUM1.yaml 
+
+rosrun ORB_SLAM2 RGBD camera/depth_registered/image_raw:=camera/depth/image_raw camera/rgb/image_raw:=camera/color/image_raw Vocabulary/ORBvoc.txt Examples/RGB-D/TUM1.yaml true false
+
+

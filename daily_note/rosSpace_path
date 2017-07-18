@@ -1,0 +1,5 @@
+source /home/wang/Wang/self_learnspace/catkin_ws/devel/setup.bash
+source /home/wang/Wang/self_learnspace/ROS_space/ROS_workspace/ros_project_dependencies_ws/devel
+
+
+

@@ -1,0 +1,30 @@
+export |grep PATH;  printenv |grep PATH; vi 没有颜色  安装vim就可以;
+roscd log;      rosrun turtlesim turtlesim_node __name:=my_turtle ;
+cd;  pwd;
+*****chapter three******
+/etc/passwd   用户的基本配置信息
+man xterm     查找xterm命令手册    enter与空格
+man 1 hostname, man 2 hostname;
+man 1 intro,    man 2 intro;
+cd
+ls (-F,-a,-R,-l，-d，-i)
+ls -l f?ll; ls -l my*;
+touch        创建文件;
+cp source destination;
+cp (-i,-R,);
+CP *script  Mod_scripts/
+链接文件；
+重命名文件,移动文件 mv;可移动文件，也可移动文件夹；
+删除文件 rm；-i;
+创建目录 mkdir；
+同时创建多个目录和子目录   mkdir -p dir1/dir2/der3;
+touch dir1/file1;
+删除目录 rmdir；
+rm -ri dir1;
+tree dir1; rm -rf dir1;
+file 查看文件，目录类型；
+cat 查看整个文件；-n,-b,-T;
+more，less 查看文件；
+tail 查看部分文件； tail -n 2 file1;  -f 其他进程使用该文件时查看文件的内容；
+head 查看部分文件；  head -5 file1;
+

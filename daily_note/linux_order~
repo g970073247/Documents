@@ -1,0 +1,3 @@
+export |grep PATH;  printenv |grep PATH; vi 没有颜色  安装vim就可以;
+roscd log;      rosrun turtlesim turtlesim_node __name:=my_turtle ;
+cd;  pwd;

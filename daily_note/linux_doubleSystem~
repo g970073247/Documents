@@ -1,0 +1,28 @@
+sudo fdisk -l
+sudo grub-install /dev/sdb
+sudo chmod 777 /boot/grub/grub.cfg
+sudo blkid;
+######important####
+sudo gedit /etc/grub.d/40_custom
+复制如下内容
+在打开的40_custom文件中输入如下一段内容：
+'Windows 10 (loader) (on /dev/sdb1)'????是否可用
+menuentry 'Win7' {
+
+set root=(hd0,1);    注意：这个地方1前面不能有空格，也就是说如果这样(hd0, 1)，是进不了Win7的，会报“No such disk”。
+
+ntldr /bootmgr
+
+boot
+
+}
+
+然后执行：
+
+arac@test:~$sudo update-grub;
+#################################
+
+删除已经卸载的软件包  sudo apt-get autoclean
+把电脑上存储的安装包全部卸载  sudo apt-get clean
+清理 卸载软件时残留在系统中的垃圾 sudo apt-get autoremove;
+改变vim的字体颜色配置  ／etc／vim／vimrc

@@ -1,0 +1,13 @@
+查看当前OpenCV版本号
+
+pkg-config --modversion opencv
+
+OpenCV多版本冲突
+
+由于系统安装了两个版本的OpenCV，在编译时有可能会发生以下错误：
+
+/usr/bin/ld: warning: libopencv_highgui.so.2.4, needed by /opt/ros/indigo/lib/libcv_bridge.so, may conflict with libopencv_highgui.so.3.1
+
+这时，可以在CMakeLists.txt文件中指定OpenCV所需版本的的build目录路径来解决冲突问题，如[2]：
+
+set(OpenCV_DIR "/home/luohanjie/Documents/Software/opencv-2.4.10/build")

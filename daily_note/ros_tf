@@ -1,0 +1,24 @@
+*** tf debugging tools ***
+tf_echo;  rosrun tf tf_echo turtle1 turtle2;
+rviz;  rosrun tf view_frames;   evince  frames.pdf;
+rosrun tf view_frames  --node=NODE_NAME;
+rqt_tf_tree;
+rosrun tf tf_monitor base_link torso_lift_link;
+roswtf;
+
+
+***tf introduction demo***
+roslaunch turtle_tf turtle_tf_demo.launch;
+rosrun tf view_frames;
+evince frames.pdf;
+rosrun rqt_tf_tree  rqt_tf_tree;
+rqt &;
+rosrun tf tf_echo turtle1 turtle2;
+rosrun rviz rviz -d `rospack find turtle_tf`/rviz/turtle_rviz.rviz;
+
+***Debugging tf problems guide***
+roslaunch turtle_tf start_debug_demo.launch;
+rosrun tf tf_echo turtle3 turtle1;
+rosrun tf view_frames;
+evince frames.pdf;
+rosrun tf tf_monitor turtle2 turtle1;

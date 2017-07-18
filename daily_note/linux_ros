@@ -1,0 +1,11 @@
+echo int64 num > msg/Num.msg
+Creating a ROS msg and srv   (catkin_make install与 catkin_make)
+catkin_make 后，可执行文件在 caktin_ws/devel/lib;
+roswtf;
+rostopic list -v;
+rosbag record -a ;
+rosbag info <bagfile>;
+rosbag play <bagfile>;  rosbag play -r 2 <bagfile>;
+apt search; apt-cache search;
+echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
+ls /dev/video*
